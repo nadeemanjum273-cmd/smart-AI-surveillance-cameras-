@@ -1,0 +1,34 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment
+.env
+venv/
+env/
+ENV/
+
+# Large videos and cache
+*.mp4
+*.avi
+*.mkv
+*.mov
+new_videos/
+runs/detect/*.mp4
+runs/detect/test_output.mp4
+
+# Model weights
+runs/**/weights/last.pt
+runs/**/weights/*.onnx
+
+# Temporary calibration images
+green_mask.png
+lines_only.png
+dbg_lines.png
+detected_corners.png
+
+# System
+.DS_Store
+Thumbs.db
